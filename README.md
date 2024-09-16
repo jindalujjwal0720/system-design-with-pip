@@ -2,7 +2,7 @@
 
 Welcome to "System Design with Pip the Penguin" - a fun, engaging, and comprehensive learning resource for mastering the art of system design!
 
-![Pip the Penguin banner](/images/home-banner.png)
+![](/images/home-banner.jpg)
 
 ## About This Project
 
