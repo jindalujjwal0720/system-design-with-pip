@@ -1,5 +1,3 @@
-# Chapter 6: Scaling Databases
-
 ## Pip's Growing Problem
 
 Greetings, future system designers! Pip the Penguin here, and I've got a problem. The Penguin Village Fish Delivery System has been a smashing success! We've managed to efficiently deliver delicious fish to all the penguins in the village, but our system is starting to creak under the weight of all the new orders and growing demand.

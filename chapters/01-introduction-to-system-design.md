@@ -1,5 +1,3 @@
-# Chapter 1: Welcome to the World of System Design!
-
 ## Meet Pip the Penguin
 
 Hello there, future system designers! I'm Pip the Penguin, and I'm absolutely thrilled to be your guide on this exciting journey into the fascinating world of system design. 🐧

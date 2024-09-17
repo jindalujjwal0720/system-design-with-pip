@@ -1,5 +1,3 @@
-# Chapter 3: Building Blocks of Distributed Systems
-
 ## Welcome Back, Future System Designers!
 
 It's Pip the Penguin here, ready to guide you through another fascinating adventure in the world of system design. We've learned about fundamental concepts, but now we're diving into the heart of how systems are built to handle all kinds of demands. Imagine our Penguin Village, where the population is growing rapidly – we need a system that can scale and stay efficient!
