@@ -39,3 +39,20 @@
 - ACID vs. BASE
 - Consistency models
 - Distributed transactions
+
+## Scalability and Performance
+
+### 6. [Scaling Databases](chapters/06-scaling-databases.md)
+
+- Replication (Master-Slave, Master-Master)
+- Sharding strategies
+- Partitioning
+- Indexing at scale
+
+### 7. [Caching Strategies](chapters/07-caching-strategies.md)
+
+- Cache placement strategies
+- Cache eviction policies
+- Write-through vs. Write-back
+- Cache coherence
+- Distributed caching (Memcached, Redis)
