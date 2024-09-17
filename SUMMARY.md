@@ -14,6 +14,9 @@
 
 - [Scaling Databases](chapters/06-scaling-databases.md)
 - [Caching Strategies](chapters/07-caching-strategies.md)
+- [Load Balancing in Depth](chapters/08-load-balancing-in-depth.md)
+- [Microservices Architecture](chapters/09-microservices-architecture.md)
+- [Containerization and Orchestration](chapters/10-containerization-and-orchestration.md)
 
 ## Additional Resources
 

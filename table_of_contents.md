@@ -56,3 +56,25 @@
 - Write-through vs. Write-back
 - Cache coherence
 - Distributed caching (Memcached, Redis)
+
+### 8. [Load Balancing in Depth](chapters/08-load-balancing-in-depth.md)
+
+- Algorithms (Round Robin, Least Connections, etc.)
+- Layer 4 vs. Layer 7 load balancing
+- Global Server Load Balancing (GSLB)
+- Service discovery
+
+### 9. [Microservices Architecture](chapters/09-microservices-architecture.md)
+
+- Monolithic vs. Microservices
+- Service-Oriented Architecture (SOA)
+- Decomposition strategies
+- Inter-service communication
+- API Gateway pattern
+
+### 10. [Containerization and Orchestration](chapters/10-containerization-and-orchestration.md)
+
+- Docker and containerization
+- Kubernetes and container orchestration
+- Service mesh (Istio)
+- Serverless architecture
