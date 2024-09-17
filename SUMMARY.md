@@ -10,6 +10,11 @@
 - [Databases and Storage Systems](chapters/04-databases-and-storage-systems.md)
 - [Fundamentals of Distributed Systems](chapters/05-fundamentals-of-distributed-systems.md)
 
+## Scalability and Performance
+
+- [Scaling Databases](chapters/06-scaling-databases.md)
+- [Caching Strategies](chapters/07-caching-strategies.md)
+
 ## Additional Resources
 
 - [Table of Contents](table_of_contents.md)
