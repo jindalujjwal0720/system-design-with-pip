@@ -1,4 +1,4 @@
-## Chapter 7: Caching Strategies
+# Chapter 7: Caching Strategies
 
 ## Pip's Caching Adventure
 
