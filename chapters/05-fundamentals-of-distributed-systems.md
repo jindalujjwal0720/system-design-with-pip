@@ -1,4 +1,4 @@
-## Chapter 5: Fundamentals of Distributed Systems
+# Chapter 5: Fundamentals of Distributed Systems
 
 Hey there, future system designers! Pip the Penguin here, ready to guide you through the fascinating world of distributed systems. Buckle up, because we're about to dive into some crucial concepts that are vital for building reliable and scalable systems.
 

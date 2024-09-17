@@ -1,4 +1,4 @@
-## Chapter 8: Load Balancing in Depth
+# Chapter 8: Load Balancing in Depth
 
 ## The Problem with Busy Fish Counters
 
