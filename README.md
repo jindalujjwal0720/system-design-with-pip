@@ -50,20 +50,3 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 Ready to start your journey with Pip? Head over to [Chapter 1: Introduction to System Design](chapters/01-introduction-to-system-design.md) and let's begin!
 
 Happy learning, and remember - in the world of system design, there are no fish out of water, only opportunities to grow! 🐧❄️
-
-<script src="https://giscus.app/client.js"
-    data-repo="jindalujjwal0720/system-design-with-pip"
-    data-repo-id="R_kgDOMx9kqg"
-    data-category="General"
-    data-category-id="DIC_kwDOMx9kqs4Cikt8"
-    data-mapping="og:title"
-    data-strict="0"
-    data-reactions-enabled="1"
-    data-emit-metadata="0"
-    data-input-position="top"
-    data-theme="preferred_color_scheme"
-    data-lang="en"
-    data-loading="lazy"
-    crossorigin="anonymous"
-    async>
-</script>
