@@ -126,7 +126,7 @@ Well, there you have it! We've covered some fundamental concepts that will be es
 
 Remember, these concepts are like the building blocks of any digital system. Just like penguins communicate in different ways, we need to understand the different protocols and styles to create systems that can talk to each other effectively and securely.
 
-**Pip's Pop Quiz**:
+## 🐧 Pip's Pop Quiz 🐧
 
 1. What is the client-server model, and give an example of how it works in real life.
 2. What are network protocols, and why are they important for internet communication?

@@ -129,7 +129,7 @@ Stay curious, keep exploring, and don't forget to waddle on! 🐧❄️
 
 ---
 
-## Pip's Pop Quiz 🐧
+## 🐧 Pip's Pop Quiz 🐧
 
 Test your knowledge on the concepts we discussed:
 

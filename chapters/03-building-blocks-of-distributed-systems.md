@@ -148,7 +148,7 @@ Uber, the ride-hailing giant, relies heavily on distributed systems to manage mi
 
 Uber's system is a prime example of how distributed systems can be used to build scalable and reliable services that handle massive amounts of data and traffic.
 
-## Pip's Pop Quiz 🐧
+## 🐧 Pip's Pop Quiz 🐧
 
 Let's see what you've learned about these building blocks:
 
