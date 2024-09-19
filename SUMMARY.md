@@ -4,19 +4,19 @@
 
 ## Foundations of System Design
 
-- [Introduction to System Design](chapters/01-introduction-to-system-design.md)
-- [Fundamental Concepts](chapters/02-fundamental-concepts.md)
-- [Building Blocks of Distributed Systems](chapters/03-building-blocks-of-distributed-systems.md)
-- [Databases and Storage Systems](chapters/04-databases-and-storage-systems.md)
-- [Fundamentals of Distributed Systems](chapters/05-fundamentals-of-distributed-systems.md)
+- [Introduction to System Design](resources/chapters/01-introduction-to-system-design.md)
+- [Fundamental Concepts](resources/chapters/02-fundamental-concepts.md)
+- [Building Blocks of Distributed Systems](resources/chapters/03-building-blocks-of-distributed-systems.md)
+- [Databases and Storage Systems](resources/chapters/04-databases-and-storage-systems.md)
+- [Fundamentals of Distributed Systems](resources/chapters/05-fundamentals-of-distributed-systems.md)
 
 ## Scalability and Performance
 
-- [Scaling Databases](chapters/06-scaling-databases.md)
-- [Caching Strategies](chapters/07-caching-strategies.md)
-- [Load Balancing in Depth](chapters/08-load-balancing-in-depth.md)
-- [Microservices Architecture](chapters/09-microservices-architecture.md)
-- [Containerization and Orchestration](chapters/10-containerization-and-orchestration.md)
+- [Scaling Databases](resources/chapters/06-scaling-databases.md)
+- [Caching Strategies](resources/chapters/07-caching-strategies.md)
+- [Load Balancing in Depth](resources/chapters/08-load-balancing-in-depth.md)
+- [Microservices Architecture](resources/chapters/09-microservices-architecture.md)
+- [Containerization and Orchestration](resources/chapters/10-containerization-and-orchestration.md)
 
 ## Additional Resources
 

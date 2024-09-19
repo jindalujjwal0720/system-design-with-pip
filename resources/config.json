@@ -1,0 +1,86 @@
+{
+  "title": "System Design With Pip",
+  "description": "A comprehensive guide to system design",
+  "author": "Pip, the Penguin",
+  "navigation": [
+    {
+      "title": "Introduction",
+      "path": "README.md"
+    },
+    {
+      "title": "Foundations of System Design",
+      "children": [
+        {
+          "title": "Introduction to System Design",
+          "path": "resources/chapters/01-introduction-to-system-design.md"
+        },
+        {
+          "title": "Fundamental Concepts",
+          "path": "resources/chapters/02-fundamental-concepts.md"
+        },
+        {
+          "title": "Building Blocks of Distributed Systems",
+          "path": "resources/chapters/03-building-blocks-of-distributed-systems.md"
+        },
+        {
+          "title": "Databases and Storage Systems",
+          "path": "resources/chapters/04-databases-and-storage-systems.md"
+        },
+        {
+          "title": "Fundamentals of Distributed Systems",
+          "path": "resources/chapters/05-fundamentals-of-distributed-systems.md"
+        }
+      ]
+    },
+    {
+      "title": "Scalability and Performance",
+      "children": [
+        {
+          "title": "Scaling Databases",
+          "path": "resources/chapters/06-scaling-databases.md"
+        },
+        {
+          "title": "Caching Strategies",
+          "path": "resources/chapters/07-caching-strategies.md"
+        },
+        {
+          "title": "Load Balancing in Depth",
+          "path": "resources/chapters/08-load-balancing-in-depth.md"
+        },
+        {
+          "title": "Microservices Architecture",
+          "path": "resources/chapters/09-microservices-architecture.md"
+        },
+        {
+          "title": "Containerization and Orchestration",
+          "path": "resources/chapters/10-containerization-and-orchestration.md"
+        }
+      ]
+    },
+    {
+      "title": "Additional Resources",
+      "children": [
+        {
+          "title": "Table of Contents",
+          "path": "table_of_contents.md"
+        },
+        {
+          "title": "Glossary of Terms",
+          "path": "glossary.md"
+        },
+        {
+          "title": "Additional Resources",
+          "path": "additional_resources.md"
+        },
+        {
+          "title": "Contributing",
+          "path": "CONTRIBUTING.md"
+        },
+        {
+          "title": "License",
+          "path": "LICENSE.md"
+        }
+      ]
+    }
+  ]
+}

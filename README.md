@@ -1,6 +1,6 @@
 # System Design with Pip the Penguin 🐧
 
-![](/images/home-banner.webp)
+![](resources/images/home-banner.webp)
 
 Welcome to "System Design with Pip the Penguin" - a fun, engaging, and comprehensive learning resource for mastering the art of system design!
 
@@ -47,6 +47,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 - Special thanks to all the contributors who have helped shape this resource.
 - Inspiration drawn from real-world system design challenges and solutions.
 
-Ready to start your journey with Pip? Head over to [Chapter 1: Introduction to System Design](chapters/01-introduction-to-system-design.md) and let's begin!
+Ready to start your journey with Pip? Head over to [Chapter 1: Introduction to System Design](resources/chapters/01-introduction-to-system-design.md) and let's begin!
 
 Happy learning, and remember - in the world of system design, there are no fish out of water, only opportunities to grow! 🐧❄️
