@@ -16,7 +16,7 @@ const getPathname = (pathname: string) => {
     return pathname.replace("/system-design-with-pip", "");
   }
 
-  console.log(pathname);
+  alert(pathname);
 
   return pathname === "/" || pathname === "" ? "/README.md" : pathname;
 };
