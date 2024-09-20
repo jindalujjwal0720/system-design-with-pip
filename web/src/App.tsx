@@ -5,7 +5,7 @@ import SidebarNavProvider from "./providers/sidebar-nav";
 
 function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.PROD ? "/system-design-with-pip" : "/"}>
       <SidebarNavProvider>
         <SearchBoxProvider>
           <Layout />

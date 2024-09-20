@@ -1,6 +1,6 @@
 # System Design with Pip the Penguin 🐧
 
-![](resources/images/home-banner.webp)
+![](https://raw.githubusercontent.com/jindalujjwal0720/system-design-with-pip/main/resources/images/home-banner.webp)
 
 Welcome to "System Design with Pip the Penguin" - a fun, engaging, and comprehensive learning resource for mastering the art of system design!
 

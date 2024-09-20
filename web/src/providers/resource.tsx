@@ -16,7 +16,7 @@ const getPathname = (pathname: string) => {
     return pathname.replace("/system-design-with-pip", "");
   }
 
-  return pathname === "/" ? "/README.md" : pathname;
+  return pathname === "/" || pathname === "" ? "/README.md" : pathname;
 };
 
 const ResourceProvider = ({ children }: PropsWithChildren) => {
