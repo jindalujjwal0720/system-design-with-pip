@@ -11,9 +11,17 @@ const ResourceContext = createContext<ResourceProviderValue | undefined>(
   undefined
 );
 
+const getPathname = (pathname: string) => {
+  if (import.meta.env.PROD) {
+    return pathname.replace("/system-design-with-pip", "");
+  }
+
+  return pathname === "/" ? "/README.md" : pathname;
+};
+
 const ResourceProvider = ({ children }: PropsWithChildren) => {
   const location = useLocation();
-  const pathname = location.pathname === "/" ? "/README.md" : location.pathname;
+  const pathname = getPathname(location.pathname);
   const { data, isLoading } = useFetchResource(pathname, "text");
 
   const value = {
