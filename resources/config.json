@@ -4,8 +4,12 @@
   "author": "Pip, the Penguin",
   "navigation": [
     {
-      "title": "Introduction",
-      "path": "README.md"
+      "children": [
+        {
+          "title": "Introduction",
+          "path": "README.md"
+        }
+      ]
     },
     {
       "title": "Foundations of System Design",

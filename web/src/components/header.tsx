@@ -19,9 +19,19 @@ const Header = ({ className }: HeaderProps) => {
       )}
     >
       <div className="flex items-center gap-4">
-        <Button onClick={toggleSidebar} variant="ghost" className="p-0">
+        <Button
+          onClick={toggleSidebar}
+          variant="ghost"
+          className="p-0 md:hidden"
+        >
           <Menu size={20} />
         </Button>
+        <div className="hidden md:block">
+          <img src="/pip.png" alt="Logo" className="h-6" />
+        </div>
+        <div className="hidden md:block">
+          <p className="text-lg font-semibold">System Design With Pip</p>
+        </div>
       </div>
       <div>
         <SearchBox />
