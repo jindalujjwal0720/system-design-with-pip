@@ -27,7 +27,15 @@ const Header = ({ className }: HeaderProps) => {
           <Menu size={20} />
         </Button>
         <div className="hidden md:block">
-          <img src="/pip.png" alt="Logo" className="h-6" />
+          <img
+            src={
+              import.meta.env.PROD
+                ? "/system-design-with-pip/pip.png"
+                : "/pip.png"
+            }
+            alt="Logo"
+            className="h-6"
+          />
         </div>
         <div className="hidden md:block">
           <p className="text-lg font-semibold">System Design With Pip</p>
