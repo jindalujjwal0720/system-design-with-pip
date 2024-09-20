@@ -1,3 +1,5 @@
+# Fundamental Concepts in System Design
+
 **Pip the Penguin**: Hey everyone! Welcome back to the world of system design. Today, we're going to dive a little deeper into some fundamental concepts that are like the building blocks of any digital system – think of it as exploring the different ways penguins communicate in our village! 🐧
 
 Last chapter, we learned why good system design is important, and we even got a glimpse of some key principles and components. But to truly understand how systems work, we need to grasp these foundational concepts.

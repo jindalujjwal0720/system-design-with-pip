@@ -1,3 +1,5 @@
+# Load Balancing in Depth
+
 ## The Problem with Busy Fish Counters
 
 Remember how we set up our Penguin Village Fish Delivery Service in the last chapter? It was pretty efficient, right? We had our app, our servers, our database... but there was one big problem. Sometimes, during peak feeding times, our fish counters would get _super_ busy.

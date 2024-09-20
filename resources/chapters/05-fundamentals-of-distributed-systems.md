@@ -1,3 +1,5 @@
+# Fundamentals of Distributed Systems
+
 Hey there, future system designers! Pip the Penguin here, ready to guide you through the fascinating world of distributed systems. Buckle up, because we're about to dive into some crucial concepts that are vital for building reliable and scalable systems.
 
 Now, you might be thinking, "Pip, what's a distributed system?" Well, imagine our Penguin Village expanding! We might have multiple colonies, each with its own fish stores and communication systems. A distributed system is like connecting all these colonies together, allowing them to share information and resources – even if they're geographically separated.

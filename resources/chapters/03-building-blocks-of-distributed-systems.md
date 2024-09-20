@@ -1,4 +1,4 @@
-## Welcome Back, Future System Designers!
+# Building Blocks of Distributed Systems
 
 It's Pip the Penguin here, ready to guide you through another fascinating adventure in the world of system design. We've learned about fundamental concepts, but now we're diving into the heart of how systems are built to handle all kinds of demands. Imagine our Penguin Village, where the population is growing rapidly – we need a system that can scale and stay efficient!
 
@@ -157,8 +157,6 @@ Let's see what you've learned about these building blocks:
 3.  How can a cache improve the performance of a system?
 4.  What is the main advantage of a CDN?
 5.  How does a message queue help in decoupling applications?
-
-## Keep Exploring, Future System Designers!
 
 This chapter has introduced you to the fascinating world of distributed systems and the essential building blocks that make them powerful and efficient. We've learned about load balancers, reverse proxies, caches, CDNs, and message queues. Remember, these are just the starting blocks! As we continue our journey, we'll delve deeper into specific architectural patterns and design decisions that will help you build robust and scalable systems.
 

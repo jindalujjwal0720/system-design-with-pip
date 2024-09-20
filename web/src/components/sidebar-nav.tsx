@@ -25,9 +25,9 @@ const SidebarNav = ({ className }: SidebarNavProps) => {
       <ScrollArea className="h-full w-full">
         <div className="flex flex-col p-4 md:px-4 h-full transition-all overflow-hidden w-full">
           <nav className="flex flex-col space-y-4 text-sm">
-            {data?.navigation?.map((navItem) => {
+            {data?.navigation?.map((navItem, index) => {
               return (
-                <div key={navItem.title}>
+                <div key={`${navItem.title}-${index}`}>
                   <p className="font-semibold uppercase text-xs tracking-normal px-4 py-2">
                     {navItem.title}
                   </p>

@@ -1,4 +1,4 @@
-## Chapter 9: Microservices Architecture: A Penguin's Guide to Distributed Systems
+# Microservices Architecture
 
 ## Pip's Big Problem
 

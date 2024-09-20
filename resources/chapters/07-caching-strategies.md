@@ -1,3 +1,5 @@
+# Caching Strategies
+
 ## Pip's Caching Adventure
 
 Hello again, aspiring system designers! Pip the Penguin here, ready to dive into another crucial aspect of system design: **caching**. Just like we penguins need to store extra fish for the lean times, digital systems need to store frequently accessed data for quicker retrieval. That's where caching comes in!

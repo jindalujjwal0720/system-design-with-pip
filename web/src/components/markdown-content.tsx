@@ -10,6 +10,15 @@ interface MarkdownContentProps {
   className?: string;
 }
 
+const baseUrl =
+  "https://raw.githubusercontent.com/jindalujjwal0720/system-design-with-pip/main";
+
+const getImageSrc = (src: string) => {
+  return src.startsWith("http") || src.startsWith("/")
+    ? src
+    : `${baseUrl}/${src}`;
+};
+
 const H2 = ({
   children,
   slug,
@@ -97,6 +106,16 @@ const MarkdownContent = ({ className }: MarkdownContentProps) => {
             ),
             li: ({ children }) => (
               <li className="text-base pl-1.5">{children}</li>
+            ),
+            img: ({ src, alt }) => (
+              <div className="flex flex-col items-center">
+                <img
+                  src={getImageSrc(src as string)}
+                  alt={alt as string}
+                  className="w-full rounded-md mt-6"
+                />
+                <p className="text-sm text-muted-foreground mt-2">{alt}</p>
+              </div>
             ),
           }}
         >

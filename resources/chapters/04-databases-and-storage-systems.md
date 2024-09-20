@@ -1,3 +1,5 @@
+# Databases and Storage Systems
+
 Hello again, future system designers! Pip the Penguin here, and today we're diving into the heart of any digital system – its storage and data management. It's like exploring the vast library of the penguin village, where all our important information is carefully kept. 📚
 
 But before we embark on our data exploration, let's consider why managing data is so crucial. Imagine our penguin village without a reliable system for storing information. We'd have no record of who's ordered fish, what kind of fish they prefer, or even how many penguins are living in the village! Chaos! 🐧
