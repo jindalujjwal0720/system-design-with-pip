@@ -5,6 +5,7 @@ import { Slugger } from "@/utils/slug";
 import { PropsWithChildren, useEffect, useMemo, useRef } from "react";
 import Markdown from "react-markdown";
 import { Helmet } from "react-helmet";
+import CommentsArea from "./comments-area";
 
 interface MarkdownContentProps {
   className?: string;
@@ -122,6 +123,7 @@ const MarkdownContent = ({ className }: MarkdownContentProps) => {
           {typeof data === "string" ? data : "Something went wrong"}
         </Markdown>
       )}
+      <CommentsArea />
     </div>
   );
 };

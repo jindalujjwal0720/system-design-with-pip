@@ -13,10 +13,8 @@ const ResourceContext = createContext<ResourceProviderValue | undefined>(
 
 const getPathname = (pathname: string) => {
   if (import.meta.env.PROD) {
-    return pathname.replace("/system-design-with-pip", "");
+    pathname = pathname.replace("/system-design-with-pip", "");
   }
-
-  alert(pathname);
 
   return pathname === "/" || pathname === "" ? "/README.md" : pathname;
 };
