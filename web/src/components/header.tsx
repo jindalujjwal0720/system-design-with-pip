@@ -21,8 +21,8 @@ const Header = ({ className }: HeaderProps) => {
       <div className="flex items-center gap-4">
         <Button
           onClick={toggleSidebar}
-          variant="ghost"
-          className="p-0 md:hidden"
+          variant="link"
+          className="p-0 md:hidden bg-transparent"
         >
           <Menu size={20} />
         </Button>
@@ -37,9 +37,7 @@ const Header = ({ className }: HeaderProps) => {
             className="h-6"
           />
         </div>
-        <div className="hidden md:block">
-          <p className="text-lg font-semibold">System Design With Pip</p>
-        </div>
+        <p className="text-lg font-semibold">System Design With Pip</p>
       </div>
       <div>
         <SearchBox />

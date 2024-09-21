@@ -22,15 +22,15 @@ const cacheResource = (urn: string, data: unknown, type: "json" | "text") => {
     data: JSON.stringify(data),
     expiresAt: getExpiry(),
   };
-  localStorage.setItem(urn, JSON.stringify(cacheData));
+  sessionStorage.setItem(urn, JSON.stringify(cacheData));
 };
 
 const getCachedResource = (urn: string): CacheData | null => {
-  const cacheData = localStorage.getItem(urn);
+  const cacheData = sessionStorage.getItem(urn);
   if (!cacheData) return null;
   const parsedData = JSON.parse(cacheData) as CacheData;
   if (new Date(parsedData.expiresAt) < new Date()) {
-    localStorage.removeItem(urn);
+    sessionStorage.removeItem(urn);
     return null;
   }
   return parsedData;

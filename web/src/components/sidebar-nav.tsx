@@ -12,7 +12,7 @@ interface SidebarNavProps {
 const SidebarNav = ({ className }: SidebarNavProps) => {
   const { data } = useFetchResource<Config>("resources/config.json", "json");
   const location = useLocation();
-  const { isOpen } = useSidebarNav();
+  const { isOpen, toggle } = useSidebarNav();
 
   return (
     <div
@@ -44,6 +44,10 @@ const SidebarNav = ({ className }: SidebarNavProps) => {
                               ? "text-primary font-semibold"
                               : "text-muted-foreground"
                           )}
+                          onClick={() => {
+                            if (!isOpen) return;
+                            toggle();
+                          }}
                         >
                           <p>{child.title}</p>
                         </Link>

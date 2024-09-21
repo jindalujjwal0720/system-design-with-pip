@@ -1,10 +1,10 @@
 import Header from "@/components/header";
-import MarkdownContent from "@/components/markdown-content";
 import SidebarNav from "@/components/sidebar-nav";
 import SummaryNav from "@/components/summary-nav";
 import ResourceProvider from "@/providers/resource";
+import { PropsWithChildren } from "react";
 
-const Layout = () => {
+const ResourceLayout = ({ children }: PropsWithChildren) => {
   return (
     <div className="flex flex-col h-screen">
       <Header className="h-14 sticky top-0 z-10 bg-background border-b-2 border-b-muted" />
@@ -12,7 +12,7 @@ const Layout = () => {
         <SidebarNav className="bg-background" />
         <ResourceProvider>
           <div className="flex-1 md:flex h-full w-full overflow-auto">
-            <MarkdownContent className="h-full flex-1 max-w-4xl mx-auto px-8 md:px-12 py-8 space-y-4" />
+            <div className="flex-1 flex flex-col">{children}</div>
             <SummaryNav className="w-64 hidden xl:block bg-background sticky top-0 h-[calc(100dvh-56px)] overflow-auto no-scrollbar" />
           </div>
         </ResourceProvider>
@@ -21,4 +21,4 @@ const Layout = () => {
   );
 };
 
-export default Layout;
+export default ResourceLayout;
