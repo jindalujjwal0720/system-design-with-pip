@@ -64,7 +64,7 @@ const MarkdownContent = ({ className }: MarkdownContentProps) => {
   }, [setActiveHash]);
 
   if (isLoading) {
-    return <MarkdownContentLoading />;
+    return <MarkdownContentLoading className={className} />;
   }
 
   return (
@@ -122,25 +122,31 @@ const MarkdownContent = ({ className }: MarkdownContentProps) => {
   );
 };
 
-const MarkdownContentLoading = () => {
+interface MarkdownContentLoadingProps {
+  className?: string;
+}
+
+const MarkdownContentLoading = ({ className }: MarkdownContentLoadingProps) => {
   return (
-    <div className="flex flex-col gap-12 w-full h-full">
-      <div className="h-12 animate-pulse bg-muted w-2/3 rounded-md" />
-      <div className="flex flex-col gap-4">
-        <div className="h-5 animate-pulse bg-muted w-full rounded-md" />
-        <div className="h-5 animate-pulse bg-muted w-full rounded-md" />
-        <div className="h-5 animate-pulse bg-muted w-full rounded-md" />
-        <div className="h-5 animate-pulse bg-muted w-full rounded-md" />
-        <div className="h-5 animate-pulse bg-muted w-1/2 rounded-md" />
-      </div>
-      <div className="h-8 animate-pulse bg-muted w-2/3 rounded-md" />
-      <div className="aspect-video animate-pulse bg-muted w-full rounded-md" />
-      <div className="flex flex-col gap-4">
-        <div className="h-5 animate-pulse bg-muted w-full rounded-md" />
-        <div className="h-5 animate-pulse bg-muted w-full rounded-md" />
-        <div className="h-5 animate-pulse bg-muted w-full rounded-md" />
-        <div className="h-5 animate-pulse bg-muted w-full rounded-md" />
-        <div className="h-5 animate-pulse bg-muted w-1/2 rounded-md" />
+    <div className={className}>
+      <div className="flex flex-col gap-12 w-full h-full">
+        <div className="h-12 animate-pulse bg-muted w-2/3 rounded-md" />
+        <div className="flex flex-col gap-4">
+          <div className="h-5 animate-pulse bg-muted w-full rounded-md" />
+          <div className="h-5 animate-pulse bg-muted w-full rounded-md" />
+          <div className="h-5 animate-pulse bg-muted w-full rounded-md" />
+          <div className="h-5 animate-pulse bg-muted w-full rounded-md" />
+          <div className="h-5 animate-pulse bg-muted w-1/2 rounded-md" />
+        </div>
+        <div className="h-8 animate-pulse bg-muted w-2/3 rounded-md" />
+        <div className="aspect-video animate-pulse bg-muted w-full rounded-md" />
+        <div className="flex flex-col gap-4">
+          <div className="h-5 animate-pulse bg-muted w-full rounded-md" />
+          <div className="h-5 animate-pulse bg-muted w-full rounded-md" />
+          <div className="h-5 animate-pulse bg-muted w-full rounded-md" />
+          <div className="h-5 animate-pulse bg-muted w-full rounded-md" />
+          <div className="h-5 animate-pulse bg-muted w-1/2 rounded-md" />
+        </div>
       </div>
     </div>
   );

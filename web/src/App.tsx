@@ -11,7 +11,7 @@ function App() {
       <SidebarNavProvider>
         <SearchBoxProvider>
           <ResourceLayout>
-            <MarkdownContent className="flex-1 max-w-4xl mx-auto px-6 md:px-12 py-8 space-y-4" />
+            <MarkdownContent className="w-full flex-1 max-w-4xl mx-auto px-6 md:px-12 py-8 space-y-4" />
             <CommentsArea className="w-full max-w-4xl mx-auto px-6 mb-12" />
           </ResourceLayout>
         </SearchBoxProvider>
