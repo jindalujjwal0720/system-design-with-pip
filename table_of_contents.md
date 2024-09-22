@@ -2,21 +2,21 @@
 
 ## Foundations of System Design
 
-### 1. [Introduction to System Design](chapters/01-introduction-to-system-design.md)
+### 1. [Introduction to System Design](resources/chapters/01-introduction-to-system-design.md)
 
 - What is system design?
 - Importance of system design
 - System design process
 - Trade-offs in system design
 
-### 2. [Fundamental Concepts](chapters/02-fundamental-concepts.md)
+### 2. [Fundamental Concepts](resources/chapters/02-fundamental-concepts.md)
 
 - Client-Server model
 - Network protocols (TCP/IP, HTTP/HTTPS, WebSocket)
 - API design (REST, GraphQL, gRPC)
 - Stateless vs. Stateful systems
 
-### 3. [Building Blocks of Distributed Systems](chapters/03-building-blocks-of-distributed-systems.md)
+### 3. [Building Blocks of Distributed Systems](resources/chapters/03-building-blocks-of-distributed-systems.md)
 
 - Load Balancers
 - Reverse Proxies
@@ -24,7 +24,7 @@
 - Content Delivery Networks (CDNs)
 - Message Queues
 
-### 4. [Databases and Storage Systems](chapters/04-databases-and-storage-systems.md)
+### 4. [Databases and Storage Systems](resources/chapters/04-databases-and-storage-systems.md)
 
 - Relational Databases (MySQL, PostgreSQL)
 - NoSQL Databases (MongoDB, Cassandra, Redis)
@@ -33,7 +33,7 @@
 - Time Series Databases
 - Graph Databases
 
-### 5. [Fundamentals of Distributed Systems](chapters/05-fundamentals-of-distributed-systems.md)
+### 5. [Fundamentals of Distributed Systems](resources/chapters/05-fundamentals-of-distributed-systems.md)
 
 - CAP Theorem
 - ACID vs. BASE
@@ -42,14 +42,14 @@
 
 ## Scalability and Performance
 
-### 6. [Scaling Databases](chapters/06-scaling-databases.md)
+### 6. [Scaling Databases](resources/chapters/06-scaling-databases.md)
 
 - Replication (Master-Slave, Master-Master)
 - Sharding strategies
 - Partitioning
 - Indexing at scale
 
-### 7. [Caching Strategies](chapters/07-caching-strategies.md)
+### 7. [Caching Strategies](resources/chapters/07-caching-strategies.md)
 
 - Cache placement strategies
 - Cache eviction policies
@@ -57,14 +57,14 @@
 - Cache coherence
 - Distributed caching (Memcached, Redis)
 
-### 8. [Load Balancing in Depth](chapters/08-load-balancing-in-depth.md)
+### 8. [Load Balancing in Depth](resources/chapters/08-load-balancing-in-depth.md)
 
 - Algorithms (Round Robin, Least Connections, etc.)
 - Layer 4 vs. Layer 7 load balancing
 - Global Server Load Balancing (GSLB)
 - Service discovery
 
-### 9. [Microservices Architecture](chapters/09-microservices-architecture.md)
+### 9. [Microservices Architecture](resources/chapters/09-microservices-architecture.md)
 
 - Monolithic vs. Microservices
 - Service-Oriented Architecture (SOA)
@@ -72,7 +72,7 @@
 - Inter-service communication
 - API Gateway pattern
 
-### 10. [Containerization and Orchestration](chapters/10-containerization-and-orchestration.md)
+### 10. [Containerization and Orchestration](resources/chapters/10-containerization-and-orchestration.md)
 
 - Docker and containerization
 - Kubernetes and container orchestration
