@@ -136,7 +136,7 @@ First, we need to install Istio in our Kubernetes cluster. Once installed, we ca
 
 - **Monitor performance:** Istio provides dashboards that show the traffic flow, response times, and errors, allowing us to monitor the health and performance of our services.
 
-## Pip's Serverless Solution
+## Serverless Architecture
 
 Imagine a world where penguins don't have to worry about setting up and managing servers! It's like a lazy penguin's dream! Well, that's the power of **serverless architecture**.
 
