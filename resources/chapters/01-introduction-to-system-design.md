@@ -160,6 +160,8 @@ Now, let's break down a system into its basic parts. Understanding these compone
 
 Let's design a simple system for our Penguin Village Fish Delivery Service to see how these components work together:
 
+![](https://raw.githubusercontent.com/jindalujjwal0720/system-design-with-pip/main/resources/images/penguin-village-delivery-fish-service.png)
+
 1. **User Interface**: A mobile app for penguins to order fish (client-side).
 2. **Web Server**: Receives orders from the app (using an API).
 3. **Application Server**: Processes the orders.
