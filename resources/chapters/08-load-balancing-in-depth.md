@@ -8,7 +8,7 @@ Imagine a thousand penguins all wanting their lunch at the same time! It was a h
 
 That's where load balancing comes in!
 
-## Load Balancing: Keeping Things Balanced
+## Load Balancing
 
 Think of load balancing like a traffic control system for our fish counters. It helps us make sure that all of the servers in our system are working together smoothly, and no single server gets overloaded. Just like how traffic lights direct cars, load balancing directs incoming requests to the right servers.
 
@@ -18,7 +18,7 @@ It's like this: instead of having one big fish counter, we have multiple smaller
 
 But how does our load balancing system know which server to send each penguin to? Well, it uses different algorithms. These algorithms are like different strategies for directing penguins to fish counters. Let's look at a few of the most popular algorithms:
 
-### 1. Round Robin: It's a Penguin Circle!
+### 1. Round Robin
 
 The Round Robin algorithm is like a penguin circle. Each penguin gets a chance to go to a different fish counter. Imagine all the penguins lining up in a big circle. The first penguin goes to counter 1, the second to counter 2, the third to counter 3, and so on. Once we reach the last counter, we start over at counter 1. This way, we ensure that all the counters get a fair share of penguins.
 
@@ -32,7 +32,7 @@ The Round Robin algorithm is like a penguin circle. Each penguin gets a chance t
 - Doesn't consider server load or other factors.
 - Can lead to uneven distribution if servers have different capacities.
 
-### 2. Least Connections: The Fastest Fish Counter
+### 2. Least Connections
 
 The Least Connections algorithm is like choosing the counter with the shortest line. Our load balancing system checks how many penguins are already waiting at each counter. It then sends the next penguin to the counter with the fewest penguins. This makes sure that each penguin gets their fish quickly, without waiting in a long line.
 
@@ -46,7 +46,7 @@ The Least Connections algorithm is like choosing the counter with the shortest l
 - Can lead to uneven distribution if servers have different capacities.
 - Might not be optimal if some servers are faster than others.
 
-### 3. Random: A Penguin Lottery!
+### 3. Random
 
 The Random algorithm is like a penguin lottery. The load balancing system randomly chooses a counter for each penguin to go to. This is good for preventing any one counter from becoming too busy. It's like shaking a bag of fish and letting each penguin pick a random counter.
 
@@ -61,7 +61,7 @@ The Random algorithm is like a penguin lottery. The load balancing system random
 - Doesn't consider server load or other factors.
 - Can lead to uneven distribution if servers have different capacities.
 
-### 4. Weighted Round Robin: Balancing Based on Penguin Needs
+### 4. Weighted Round Robin
 
 The Weighted Round Robin algorithm is like giving some fish counters extra attention because they're better at handling certain types of fish. Some counters might be better at serving up big fish, while others might be better at serving up smaller fish. The Weighted Round Robin algorithm allows us to prioritize counters based on their ability to serve different fish.
 
@@ -75,7 +75,7 @@ The Weighted Round Robin algorithm is like giving some fish counters extra atten
 - More complex to implement than simpler algorithms.
 - Requires accurate knowledge of server capabilities.
 
-### 5. Least Response Time: Fish Counters with the Fastest Service
+### 5. Least Response Time
 
 The Least Response Time algorithm, also known as the "Shortest Queue" algorithm, takes a slightly different approach. Instead of just counting the number of penguins waiting at each counter, it considers the average time it takes for each counter to serve a penguin. It then directs the next penguin to the counter with the shortest average service time. This ensures that penguins are routed to the fastest-serving counters, minimizing overall wait times.
 
@@ -89,7 +89,7 @@ The Least Response Time algorithm, also known as the "Shortest Queue" algorithm,
 - Requires monitoring and calculating average response times for each server.
 - May not be ideal for scenarios with unpredictable server workloads or large variations in service times.
 
-### 6. Hashing: Always Going to the Same Counter
+### 6. Hashing
 
 Hashing is a unique approach that works differently from the other algorithms. It assigns each penguin a unique hash value based on some identifier, like their penguin ID or their desired fish type. This hash value is then used to determine which server the penguin will be routed to. This means that each penguin will always be sent to the same server, regardless of server load or other factors.
 
@@ -103,7 +103,7 @@ Hashing is a unique approach that works differently from the other algorithms. I
 - Doesn't adapt to server load or capacity variations.
 - Can lead to uneven distribution if servers have different capabilities.
 
-### 7. Consistent Hashing: Minimizing Server Changes
+### 7. Consistent Hashing
 
 Consistent Hashing is an improvement on the basic hashing approach. It ensures that only a small number of servers need to be reassigned if a server is added or removed from the system. It works by creating a virtual circle of servers and assigning each penguin a position on this circle based on their hash value. When a server is added or removed, only the penguins assigned to the affected section of the circle need to be re-routed.
 
@@ -121,7 +121,7 @@ Consistent Hashing is an improvement on the basic hashing approach. It ensures t
 
 Now, load balancing doesn't just happen at one level. It can happen at different layers of the network. These are like different parts of our fish distribution center:
 
-### 1. Layer 4 Load Balancing: The Fish Counter Supervisor
+### 1. Layer 4 Load Balancing
 
 Layer 4 load balancing is like having a supervisor at the entrance to the fish distribution center. This supervisor makes sure that all penguins get to the right counter based on the type of fish they want. They don't care about what each penguin wants, just that they get to the right counter for their fish.
 
@@ -140,7 +140,7 @@ For example, a Layer 4 load balancer might direct all requests for "salmon" to c
 - **Limited Functionality:** Can't handle complex routing rules based on application-specific criteria.
 - **Not Application-Aware:** Doesn't consider the specific application requirements or data within the request.
 
-### 2. Layer 7 Load Balancing: The Fish Order Specialist
+### 2. Layer 7 Load Balancing
 
 Layer 7 load balancing is like having a special fish order specialist who knows exactly what each penguin wants. This specialist can look at the details of each penguin's order and decide which server is best suited to fulfill that order.
 
@@ -160,7 +160,7 @@ For example, a Layer 7 load balancer might direct requests for "large tuna" to a
 - **Overhead:** Requires analyzing the content of requests, which can add some overhead.
 - **Slower:** Can be slower than Layer 4 load balancing due to the additional processing.
 
-## Global Server Load Balancing (GSLB): Spreading the Fish Across the Arctic
+## Global Server Load Balancing (GSLB)
 
 Sometimes, our fish counters might be so busy that we need help from our friends in other colonies! That's where Global Server Load Balancing (GSLB) comes in.
 
@@ -246,11 +246,7 @@ There are different ways to implement service discovery:
 
 Now let's take a look at how we can use all of these concepts to design Pip's Fish Distribution Center.
 
-### The Problem:
-
 Our Penguin Village has been growing rapidly! We're now serving hundreds of penguins, and our fish counters are struggling to keep up. We need a better solution.
-
-### The Solution:
 
 We'll build a distributed system with multiple fish counters, each running on its own server. We'll also implement a load balancer to direct penguins to the least busy counter.
 
@@ -284,11 +280,11 @@ Just like how Pip's Fish Distribution Center helps penguins get their fish quick
 
 So, next time you use a website or app, think about the load balancing system behind it, working hard to make sure everyone gets their "fish" quickly and efficiently. 🐧
 
-## Beyond the Basics: Advanced Load Balancing Concepts
+## Beyond the Basics
 
 While we've explored the fundamental concepts of load balancing, there are many advanced concepts and techniques that can be implemented to further enhance the efficiency and resilience of our systems:
 
-### 1. Sticky Sessions: Keeping Penguins with their Fish
+### 1. Sticky Sessions
 
 Sticky Sessions, also known as Session Affinity, is a technique used to ensure that a specific penguin is always routed to the same server for a particular session. This is useful for applications where user data needs to be maintained consistently across a session.
 
@@ -307,7 +303,7 @@ Sticky Sessions, also known as Session Affinity, is a technique used to ensure t
 - Can lead to uneven distribution if servers have different capacities.
 - Increased complexity for managing sessions across multiple servers.
 
-### 2. Health Checks: Monitoring for "Fish-y" Problems
+### 2. Health Checks
 
 Health Checks are an essential part of any load balancing system. They involve regularly monitoring the health of each server to ensure they are functioning correctly. If a server fails or becomes unresponsive, the load balancer will automatically remove it from the routing pool, preventing further requests from being sent to the faulty server.
 
@@ -328,7 +324,7 @@ Health Checks are an essential part of any load balancing system. They involve r
 - Can introduce additional overhead for monitoring servers.
 - Requires careful configuration and tuning to avoid false positives or negatives.
 
-### 3. Load Shedding: Avoiding Overload
+### 3. Load Shedding
 
 Load Shedding is a technique used to manage extreme situations where the load on the system exceeds its capacity. It involves selectively rejecting or delaying requests to prevent the system from becoming overwhelmed and crashing.
 
@@ -347,7 +343,7 @@ Load Shedding is a technique used to manage extreme situations where the load on
 - Can result in rejected requests, leading to a less-than-ideal user experience.
 - Requires careful configuration and tuning to avoid excessive shedding.
 
-### 4. Geo-location Routing: Delivering Fish Locally
+### 4. Geo-location Routing
 
 Geo-location Routing is a technique used to direct penguins to the closest fish counter, reducing latency and improving the user experience. This is particularly useful for systems with a geographically dispersed network of servers.
 
