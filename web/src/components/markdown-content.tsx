@@ -4,6 +4,10 @@ import { Slugger } from "@/utils/slug";
 import { PropsWithChildren, useEffect, useMemo, useRef } from "react";
 import Markdown from "react-markdown";
 import { Helmet } from "react-helmet";
+import rehypeHighlight from "rehype-highlight";
+import "highlight.js/styles/xcode.min.css";
+import { Link } from "react-router-dom";
+import CopyIcon from "./copy-icon";
 
 interface MarkdownContentProps {
   className?: string;
@@ -70,6 +74,7 @@ const MarkdownContent = ({ className }: MarkdownContentProps) => {
   return (
     <Markdown
       className={className}
+      skipHtml={true}
       components={{
         h1: ({ children }) => (
           <>
@@ -115,7 +120,37 @@ const MarkdownContent = ({ className }: MarkdownContentProps) => {
             <p className="text-sm text-muted-foreground mt-2">{alt}</p>
           </div>
         ),
+        a: ({ children, href }) => (
+          <Link
+            to={href as string}
+            className="text-blue-700 hover:underline underline-offset-2"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {children}
+          </Link>
+        ),
+        pre: ({ children }) => (
+          <pre className="rounded-md overflow-hidden relative ring-1 ring-muted bg-muted/50 p-4">
+            <CopyIcon
+              value={children?.toString() || ""}
+              className="absolute top-2 right-2 cursor-pointer bg-muted/50 text-muted-foreground hover:text-primary"
+            />
+            {children}
+          </pre>
+        ),
+        code: ({ children, className }) => {
+          const isInline = !className;
+          return isInline ? (
+            <code className="text-sm bg-muted/30 p-1 rounded-sm">
+              {children}
+            </code>
+          ) : (
+            <code className={`text-sm ${className}`}>{children}</code>
+          );
+        },
       }}
+      rehypePlugins={[rehypeHighlight]}
     >
       {typeof data === "string" ? data : "Something went wrong"}
     </Markdown>

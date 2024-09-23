@@ -79,3 +79,7 @@
     scrollbar-width: none; /* Firefox */
   }
 }
+
+.hljs {
+  background: transparent !important;
+}
