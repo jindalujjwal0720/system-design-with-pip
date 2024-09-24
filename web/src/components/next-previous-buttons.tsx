@@ -31,8 +31,8 @@ const NextPreviousButtons = ({ className }: NextPreviousButtonsProps) => {
         <Link
           to={previous.path || "#"}
           className={cn(
-            "flex-1 justify-between h-auto group py-4",
-            buttonVariants({ variant: "outline" })
+            buttonVariants({ variant: "outline" }),
+            "flex-1 justify-between h-auto group py-4"
           )}
         >
           <ChevronLeft
@@ -49,8 +49,8 @@ const NextPreviousButtons = ({ className }: NextPreviousButtonsProps) => {
         <Link
           to={next.path || "#"}
           className={cn(
-            "flex-1 justify-between h-auto group py-4",
-            buttonVariants({ variant: "outline" })
+            buttonVariants({ variant: "outline" }),
+            "flex-1 justify-between h-auto group py-4"
           )}
         >
           <div className="flex flex-col items-start">
