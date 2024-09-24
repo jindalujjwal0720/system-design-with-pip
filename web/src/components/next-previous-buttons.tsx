@@ -1,9 +1,9 @@
 import { cn } from "@/lib/utils";
-import { Button } from "./ui/button";
+import { buttonVariants } from "./ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import useFetchResource from "@/hooks/useFetchResource";
 import { Config } from "@/types/config";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 interface NextPreviousButtonsProps {
   className?: string;
@@ -22,12 +22,18 @@ const NextPreviousButtons = ({ className }: NextPreviousButtonsProps) => {
 
   if (currentIndex === -1) return null;
 
+  const previous = navitems?.[currentIndex - 1];
+  const next = navitems?.[currentIndex + 1];
+
   return (
     <div className={cn("flex gap-4 flex-col md:flex-row", className)}>
-      {currentIndex > 0 && navitems?.[currentIndex - 1]?.title && (
-        <Button
-          variant="outline"
-          className="flex-1 justify-between h-auto group py-4"
+      {previous && (
+        <Link
+          to={previous.path || "#"}
+          className={cn(
+            "flex-1 justify-between h-auto group py-4",
+            buttonVariants({ variant: "outline" })
+          )}
         >
           <ChevronLeft
             size={16}
@@ -35,30 +41,28 @@ const NextPreviousButtons = ({ className }: NextPreviousButtonsProps) => {
           />
           <div className="flex flex-col items-end">
             <span className="text-xs font-normal">Previous</span>
-            <span className="group-hover:text-primary">
-              {navitems?.[currentIndex - 1]?.title}
-            </span>
+            <span className="group-hover:text-primary">{previous.title}</span>
           </div>
-        </Button>
+        </Link>
       )}
-      {currentIndex < navitems.length - 1 &&
-        navitems?.[currentIndex + 1]?.title && (
-          <Button
-            variant="outline"
-            className="flex-1 justify-between h-auto group py-4"
-          >
-            <div className="flex flex-col items-start">
-              <span className="text-xs font-normal">Next</span>
-              <span className="group-hover:text-primary">
-                {navitems?.[currentIndex + 1]?.title}
-              </span>
-            </div>
-            <ChevronRight
-              size={16}
-              className="text-muted-foreground group-hover:text-primary"
-            />
-          </Button>
-        )}
+      {next && (
+        <Link
+          to={next.path || "#"}
+          className={cn(
+            "flex-1 justify-between h-auto group py-4",
+            buttonVariants({ variant: "outline" })
+          )}
+        >
+          <div className="flex flex-col items-start">
+            <span className="text-xs font-normal">Next</span>
+            <span className="group-hover:text-primary">{next.title}</span>
+          </div>
+          <ChevronRight
+            size={16}
+            className="text-muted-foreground group-hover:text-primary"
+          />
+        </Link>
+      )}
     </div>
   );
 };
